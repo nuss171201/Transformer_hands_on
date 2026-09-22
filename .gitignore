@@ -1,0 +1,28 @@
+# Model weights and checkpoints
+*.pth
+*.pt
+*.ckpt
+gpt2/
+models/
+
+# Downloaded datasets
+sms_spam_collection/
+*.zip
+*.tsv
+train.csv
+test.csv
+validation.csv
+
+# Generated plots
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.Rhistory
