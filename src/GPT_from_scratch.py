@@ -1,14 +1,3 @@
-"""
-Consolidated model + training code for chapters 2-5 of
-Raschka, "Build a Large Language Model (From Scratch)".
-
-Definitions only -- importing this file runs no training, printing,
-or model instantiation.
-
-Usage:
-    from GPT_from_scratch import GPTModel, train_model_simple, generate
-"""
-
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
@@ -16,7 +5,7 @@ import torch.nn as nn
 from matplotlib.ticker import MaxNLocator
 
 
-# ---------------------------------------------------------------- ch 3 / 4
+
 
 
 class GELU(nn.Module):
@@ -170,7 +159,7 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
     return idx
 
 
-# ---------------------------------------------------------------- ch 5
+
 
 
 def text_to_token_ids(text, tokenizer):
@@ -304,7 +293,7 @@ def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
     plt.show()
 
 
-# ---------------------------------------------------- loading GPT-2 weights
+
 
 
 def assign(left, right):
